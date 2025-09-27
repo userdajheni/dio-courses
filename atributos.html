@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos em HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Atributos em HTML</h1>
+	</header>
+  
+	<main>
+		<section>
+			<p>
+				Atributos fornecem <strong>informações extras</strong> para os elementos HTML. Eles sempre aparecem na <strong>tag de abertura</strong> e geralmente seguem o formato: <b>nome="valor"</b>.
+			</p>
+
+			<h2>Boas práticas</h2>
+				<ul>
+				  <li>Sempre use letras minúsculas nos atributos.</li>
+				  <li>Sempre coloque aspas em torno dos valores.</li>
+				  <li>Prefira aspas duplas, mas aspas simples também funcionam.</li>
+				</ul>
+		</section>
+
+		<section>
+			<h2>Exemplos de atributos importantes</h2>
+			<table>
+				<!-- titulo -->
+				<tr>
+					<th>href</th>
+					<th>src</th>
+					<th>width e height</th>
+					<th>alt</th>
+					<th>style</th>
+					<th>lang</th>
+					<th>title</th>
+				</tr>
+
+				<!-- definição -->
+				<tr>
+					<td>Define o destino de um link</td>
+					<td>Usado para indicar o caminho de uma imagem</td>
+					<td>Definem o tamanho da imagem em pixels</td>
+					<td>Fornece um texto alternativo se a imagem não puder ser carregada (muito útil para acessibilidade).</td>
+					<td>Permite adicionar estilos diretamente no elemento</td>
+					<td>Define o idioma da página dentro da tag &lt;html&gt;.</td>
+					<td>Mostra uma dica (tooltip) ao passar o mouse</td>
+				</tr>
+
+				<!-- exemplo -->
+				<tr>
+					<td>&lt;a href="https://www.w3schools.com">Visite o W3Schools &lt;/a&gt;</td>
+					<td>
+						<b>Exemplo de URL absoluta:</b>
+							&lt;img src="https://www.w3schools.com/images/img_girl.jpg"&gt;
+						<b>Exemplo de URL relativa:</b>
+							&lt;img src="img_girl.jpg"&gt;</td>
+					<td>&lt;img src="img_girl.jpg" width="300" height="200" alt="Exemplo redimensionado"&gt;</td>
+					<td>&lt;img src="img_typo.jpg" alt="Menina com jaqueta"&gt;</td>
+					<td>&lt;p style="color:blue;">Esse parágrafo está azul.&lt;/p&gt;</td>
+					<td>
+						&lt;!DOCTYPE html&gt;
+						&lt;html lang="en-US"&gt;
+						&lt;body&gt;
+						&lt;p&gt;Exemplo em inglês&lt;/p&gt;
+						&lt;/body&gt;
+						&lt;/html&gt;
+					</td>
+					<td>&lt;p title="Sou uma dica!">Passe o mouse aqui&lt;/p&gt;</td>
+				</tr>
+
+				<tr>
+					<td><a href="https://www.w3schools.com">Visite o W3Schools </a></td>
+					<td>
+						<b>Exemplo de URL absoluta:</b>
+							<img src="https://www.w3schools.com/images/img_girl.jpg" />
+						<b>Exemplo de URL relativa:</b>
+							<img src="img_girl.jpg"></td>
+					<td><img src="img_girl.jpg" width="300" height="200" alt="Exemplo redimensionado"></td>
+					<td><img src="img_typo.jpg" alt="Menina com jaqueta"></td>
+					<td><p style="color:blue;">Esse parágrafo está azul.</p></td>
+					<td></td>
+					<td><p title="Sou uma dica!">Passe o mouse aqui</p></td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>Resumo</h2>
+			<ul>
+			  <li>Todos os elementos HTML podem ter atributos.</li>
+			  <li><code>href</code>: destino de links.</li>
+			  <li><code>src</code>: caminho da imagem.</li>
+			  <li><code>width</code> e <code>height</code>: tamanho da imagem.</li>
+			  <li><code>alt</code>: texto alternativo de imagem.</li>
+			  <li><code>style</code>: estilos inline.</li>
+			  <li><code>lang</code>: idioma da página.</li>
+			  <li><code>title</code>: informação extra em tooltip.</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer><span>todos os direitos reservados</span></footer>
+</body>
+</html>

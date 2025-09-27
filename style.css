@@ -97,3 +97,17 @@ footer {
 
 a {	text-decoration: none; }
 a:hover { color: black;}
+
+/* tabela */
+th { 
+	border: 5px solid blue; 
+	text-align: center; 
+	padding: 10px; 
+	margin: 5px;
+}
+td { 
+	border: 3px solid violet; 
+	text-align: left; 
+	padding: 10px; 
+	margin: 5px;
+}
