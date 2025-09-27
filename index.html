@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Explorando o HTML</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<!-- header -->
@@ -31,53 +32,25 @@
 				</ul>
 			</p>
 
-			<p>
-				Um documento HTML segue sempre um padrão. Olha só um exemplo básico:
-
-				<pre>
-					<code>
-						&lt;!DOCTYPE html>
-						&lt;html>
-						&lt;head>
-  							&lt;title> Meu Primeiro Site &lt;/title>
-						&lt;/head>
-						&lt;body>
-  								&lt;h1> Olá, mundo! &lt;/h1>
-  								&lt;p> Esse é o meu primeiro parágrafo em HTML. &lt;/p>
-						&lt;/body>
-						&lt;/html>
-					</code>
-				</pre>
-			</p>
-
-			<p>
-				🔎 Explicando:
-				
-				<ul>
-					<li><span>&lt;!DOCTYPE html></span> → Diz ao navegador: “Ei, isso aqui é HTML5”.</li>
-					<li><span>&lt;html></span> → É o elemento raiz, tudo do site fica aqui dentro.</li>
-					<li><span>&lt;head></span> → Guarda informações sobre a página (título, meta tags, etc).</li>
-					<li><span>&lt;title></span> → Define o título que aparece na aba do navegador.</li>
-					<li><span>&lt;body></span> → Onde vai tudo que o usuário realmente vê: textos, imagens, links, listas...</li>
-					<li><span>&lt;h1></span> → Cria um título grandão.</li>
-					<li><span>&lt;p></span> → Cria um parágrafo de texto.</li>
-				</ul>
-			</p>
+			<h3>🔎 Explicando:</h3>			
+			<ul>
+				<li><span>&lt;!DOCTYPE html></span> → Diz ao navegador: “Ei, isso aqui é HTML5”.</li>
+				<li><span>&lt;html></span> → É o elemento raiz, tudo do site fica aqui dentro.</li>
+				<li><span>&lt;head></span> → Guarda informações sobre a página (título, meta tags, etc).</li>
+				<li><span>&lt;title></span> → Define o título que aparece na aba do navegador.</li>
+				<li><span>&lt;body></span> → Onde vai tudo que o usuário realmente vê: textos, imagens, links, listas...</li>
+				<li><span>&lt;h1></span> → Cria um título grandão.</li>
+				<li><span>&lt;p></span> → Cria um parágrafo de texto.</li>
+			</ul>
 		</section>
 
 		<!-- O que são elementos -->
-		<section>
+		<section class="elements-section">
 			<h2>O que são elementos</h2>
 			<p>
-				Um <b>elemento HTML</b> é formado por: 👉 <b>Tag de abertura + Conteúdo + Tag de fechamento</b>. <br>Exemplo:
+				Um <b>elemento HTML</b> é formado por: 👉 <b>Tag de abertura + Conteúdo + Tag de fechamento</b>. <br>
+				Exemplo: &lt;<b>h1</b>&gt; Meu Título &lt;<b>/h1</b>&gt;
 			</p>
-
-			<pre>
-				<code>
-					&lt;<b>h1</b>&gt; Meu Título &lt;<b>/h1</b>&gt;
-					&lt;<b>p</b>&gt; Meu primeiro parágrafo. &lt;<b>/p</b>&gt;
-				</code>
-			</pre>
 
 			<p>
 				Aqui temos dois elementos:
@@ -95,5 +68,7 @@
 
 		<!-- veja mais assuntos -->
 	</main>
+
+	<footer><span>todos os direitos reservados</span></footer>
 </body>
 </html>
