@@ -67,3 +67,33 @@ footer {
 	text-align: center;
 	background-color: #3d348b;
 }
+
+/* grid */
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	gap: 10px;
+	display: flex;
+	margin: 10px 0;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.card {
+	width: 300px;
+	padding: 10px;
+	cursor: pointer;
+	font-weight: 500;
+	color: #7678ED;
+	text-align: center;
+	border-radius: 16px;
+	box-sizing: border-box;
+	background-color: #F7B801;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+a {	text-decoration: none; }
+a:hover { color: black;}
