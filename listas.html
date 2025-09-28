@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas em HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Listas em HTML</h1>
+  </header>
+  
+  <main>
+    <section>
+      <h2>O que são listas em HTML?</h2>
+      <p>
+        Listas em HTML servem para organizar informações em sequência.  
+        Elas ajudam a deixar o conteúdo mais claro e fácil de ler.  
+        Existem três tipos principais: <strong>não ordenadas</strong>, <strong>ordenadas</strong> e <strong>de descrição</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Listas não ordenadas (&lt;ul&gt;)</h2>
+      <p>
+        Usadas quando a ordem dos itens não importa.  
+        Por padrão, aparecem com marcadores (bolinhas).
+      </p>
+      <div class="exemp-area">
+        <ul>
+          <li>Café</li>
+          <li>Chá</li>
+          <li>Leite</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Listas ordenadas (&lt;ol&gt;)</h2>
+      <p>
+        Aqui a ordem importa! Os itens vêm numerados ou com letras/romanos, dependendo do tipo escolhido.
+      </p>
+      <div class="exemp-area">
+        <ol>
+          <li>Primeiro item</li>
+          <li>Segundo item</li>
+          <li>Terceiro item</li>
+        </ol>
+      </div>
+      <p>Você pode mudar o estilo de numeração com o atributo <code>type</code>:</p>
+      <div class="exemp-area">
+        <ol type="A">
+          <li>Café</li>
+          <li>Chá</li>
+          <li>Leite</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>Listas de descrição (&lt;dl&gt;)</h2>
+      <p>
+        Perfeitas para glossários ou explicações.  
+        Usam três tags: <code>&lt;dl&gt;</code> (lista), <code>&lt;dt&gt;</code> (termo) e <code>&lt;dd&gt;</code> (descrição).
+      </p>
+      <div class="exemp-area">
+        <dl>
+          <dt>Café</dt>
+          <dd>- bebida quente e preta</dd>
+          <dt>Leite</dt>
+          <dd>- bebida fria e branca</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section>
+      <h2>Listas aninhadas</h2>
+      <p>
+        Sim, dá pra colocar uma lista dentro de outra. Isso cria subníveis de itens.
+      </p>
+      <div class="exemp-area">
+        <ul>
+          <li>Café</li>
+          <li>Chá
+            <ul>
+              <li>Chá preto</li>
+              <li>Chá verde</li>
+            </ul>
+          </li>
+          <li>Leite</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Listas como menu</h2>
+      <p>
+        Com CSS, listas podem virar menus de navegação.  
+        Um exemplo clássico é a lista horizontal:
+      </p>
+      <div class="exemp-area">
+        <ul style="list-style-type:none; margin:0; padding:0; overflow:hidden; background:#333;">
+          <li style="float:left;"><a href="#home" style="display:block; color:white; padding:14px; text-decoration:none;">Home</a></li>
+          <li style="float:left;"><a href="#news" style="display:block; color:white; padding:14px; text-decoration:none;">Notícias</a></li>
+          <li style="float:left;"><a href="#contact" style="display:block; color:white; padding:14px; text-decoration:none;">Contato</a></li>
+          <li style="float:left;"><a href="#about" style="display:block; color:white; padding:14px; text-decoration:none;">Sobre</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+	<footer><span>todos os direitos reservados</span></footer>
+</body>
+</html>
