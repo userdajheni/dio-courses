@@ -60,6 +60,13 @@ section {
 	background-color: #F1F1F1;
 }
 
+li > span {
+	margin: 5px;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #F1F1F1;
+}
+
 /* rodape */
 footer {
 	color: #fff;
@@ -87,27 +94,31 @@ footer {
 	padding: 10px;
 	cursor: pointer;
 	font-weight: 500;
-	color: #7678ED;
 	text-align: center;
 	border-radius: 16px;
 	box-sizing: border-box;
-	background-color: #F7B801;
+	background-color: #f72585;
 	font-family: "Roboto Condensed", sans-serif;
 }
 
-a {	text-decoration: none; }
+a {	text-decoration: none; color: #fff; }
 a:hover { color: black;}
 
 /* tabela */
-th { 
-	border: 5px solid blue; 
+table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+td, th { 
+	padding: 15px;
+	border: 1px solid black;
+}
+
+th {
 	text-align: center; 
-	padding: 10px; 
-	margin: 5px;
 }
 td { 
-	border: 3px solid violet; 
-	text-align: left; 
-	padding: 10px; 
-	margin: 5px;
+	text-align: left;
 }
