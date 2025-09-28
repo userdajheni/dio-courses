@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links em HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		  <h1>Links no HTML</h1>
+	</header>
+
+	<main>
+		<section>
+			<p>
+    			Se a web fosse uma cidade, os <strong>links</strong> seriam as ruas que conectam cada lugar. É clicando neles que a gente “viaja” de uma página pra outra.
+			</p>
+
+			<h2>O que é um link?</h2>
+			<p>No HTML, links são criados com a tag <b>&lt;a&gt;</b> (de "anchor", âncora). Sintaxe básica:</p>
+			<div class="exemp-area">&lt;a href="URL"&gt;Texto do Link&lt;/a&gt;</div>
+		</section>
+
+		<section>
+			<h2>Atributo <b>target</b></h2>
+			<p>O atributo <b>target</b> define <em>onde</em> o link vai abrir:</p>
+			  <ul>
+			    <li><span><b>_self</b></span> → abre na mesma aba (padrão)</li>
+			    <li><span><b>_blank</b></span> → abre em nova aba</li>
+			    <li><span><b>_parent</b></span> → abre no frame pai</li>
+			    <li><span><b>_top</b></span> → ocupa a janela inteira</li>
+			  </ul>
+			  <p>
+			    <div class="exemp-area">Exemplo: <a href="https://www.google.com" target="_blank">Abrir o Google em nova aba</a></div>
+			  </p>
+		</section>
+
+		<section>
+			<h2>URLs Absolutas vs Relativas</h2>
+			  <p>
+			    - <strong>Absoluta</strong>: link completo (https://...).<br>
+			    - <strong>Relativa</strong>: link para uma página dentro do mesmo site.
+			  </p>
+			  <h3>Exemplos:</h3>
+			  <p><a href="https://www.google.com/">Google (absoluto)</a></p>
+			  <p><a href="pagina.html">Minha Página (relativo)</a></p>
+
+			  <h2>Imagem como link</h2>
+			  <a href="https://www.w3schools.com/">
+			    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Logo W3Schools" width="100">
+			  </a>
+		</section>
+
+		<section>
+
+			  <h2>Link para e-mail</h2>
+			  <p>
+			    Clique e abra o programa de e-mail:
+			    <a href="mailto:alguem@exemplo.com">Enviar e-mail</a>
+			  </p>
+
+			  <h2>Usando um botão como link</h2>
+			  <button onclick="document.location='https://www.w3schools.com'">Ir para W3Schools</button>
+		</section>
+
+		<section>
+			  <h2>Título em links</h2>
+			  <p>
+			    Passe o mouse por cima: 
+			    <a href="https://www.w3schools.com/html/" title="Tutoriais de HTML na W3Schools">
+			      Visite o Tutorial HTML
+			    </a>
+			  </p>
+		</section>
+
+		<section>
+			<h2>Bookmarks (marcadores na página)</h2>
+			<p>Links também podem levar para uma parte específica da mesma página.</p>
+			<div class="exemp-area">
+				<a href="#capitulo4">Ir para o Capítulo 4</a>
+				<h3 id="capitulo4">Capítulo 4</h3>
+				<p>
+					Este é o ponto de destino do link.
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<h2>Resumo</h2>
+  			<ul>
+    			<li>Use <b>&lt;a&gt;</b> para criar links.</li>
+    			<li><b>href</b> define o destino.</li>
+    			<li><b>target</b> define onde abrir.</li>
+    			<li>Links podem ser textos, imagens, botões ou bookmarks.</li>
+    			<li><b>mailto:</b> cria link para e-mail.</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

@@ -65,6 +65,8 @@ section {
 	display: inline-block;
 }
 
+.exemp-area a { color: #f72585;}
+
 li > span {
 	margin: 5px;
 	font-weight: bold;
