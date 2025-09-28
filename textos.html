@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textos e Parágrafos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- cabeçalho -->
+	 <header><h1>Textos e Parágrafos no HTML</h1></header>
+
+	<!-- conteúdo -->
+	 <main>
+		<!-- introdução heading -->
+		<section>
+			<p> 
+				A web é feita de conteúdo, e esse conteúdo geralmente é <strong>texto</strong>. O HTML oferece várias tags para organizar, formatar e dar significado às palavras. Bora conhecer as principais 👇
+			</p>
+
+			<h2>Títulos (Headings)</h2>
+  			<p>
+				Títulos vão de <b>&lt;h1&gt;</b> até <b>&lt;h6&gt;</b>. O <b>&lt;h1&gt;</b> é o mais importante (normalmente o título da página) e o <b>&lt;h6&gt;</b> é o menos importante.
+  			</p>
+
+			<section class="exemp-area">
+				<h1>Exemplo H1</h1>
+				<h2>Exemplo H2</h2>
+			  	<h3>Exemplo H3</h3>
+			 	<h4>Exemplo H4</h4>
+			  	<h5>Exemplo H5</h5>
+			  	<h6>Exemplo H6</h6>
+			</section>
+
+			<p>
+			    🚨 Dica: use títulos para organizar o conteúdo, não só para deixar o texto maior ou em negrito.
+			</p>
+
+		</section>
+
+		<!-- paragrafos -->
+		<section>
+			<h2>Parágrafos</h2>
+  			<p>Um parágrafo é definido com a tag <b>&lt;p&gt;</b> e sempre começa em uma nova linha.</p>
+  			
+			<div class="exemp-area">
+				<b>&lt;p&gt;</b>Este é um parágrafo.<b>&lt;/p&gt;</b> <br>
+  				<b>&lt;p&gt;</b>Este é outro parágrafo.<b>&lt;/p&gt;</b>
+			</div>
+
+  			<h3>Espaços e linhas extras</h3>
+  			<p>
+				O navegador ignora espaços e quebras de linha a mais no código. Isso aqui:
+  			</p>
+
+			<div class="exemp-area">
+				como está no código: <br>
+				<b>&lt;p&gt;</b> <br>
+    				Este texto <br>
+    				tem vários espaços        e linhas <br>
+    				no código, <br>
+    				mas no navegador aparece normal. <br>
+  				<b>&lt;/p&gt;</b>
+			</div>
+			<div class="exemp-area">
+				como aparece no navegador: <br>
+				Este texto tem vários espaços e linhas no código, mas no navegador aparece normal.
+			</div>
+		</section>
+
+		<section>
+			<h2>Linhas e Quebras</h2>
+			<p>A tag <b>&lt;hr&gt;</b> cria uma linha horizontal (usada como separador).</p>
+			
+			<div class="exemp-area">
+				<p>Texto antes</p>  <hr> <p>Texto depois</p>
+			</div>
+
+			<p>Já a tag <b>&lt;br&gt;</b> quebra a linha dentro de um parágrafo.</p>
+			<div class="exemp-area">
+				<p>Esse texto está<br>em várias<br>linhas.</p>
+			</div>
+		</section>
+
+		<section>
+			<h2>Texto pré-formatado</h2>
+  			<p>Se você quiser que os espaços e quebras fiquem exatamente como no código, use a tag <b>&lt;pre&gt;</b>.</p>
+  			<pre>
+				Minha Bonnie está sobre o oceano.
+				Minha Bonnie está sobre o mar.
+				Minha Bonnie está sobre o oceano.
+				Oh, traga minha Bonnie de volta para mim.
+			</pre>
+		</section>
+
+		<section>
+			<h2>Formatações de Texto</h2>
+			<ul>
+			    <li><span><b>&lt;b&gt;</b></span> → negrito (sem importância extra)</li>
+			    <li><span><strong>&lt;strong&gt;</strong></span> → texto importante</li>
+			    <li><span><i>&lt;i&gt;</i></span> → itálico (tom alternativo)</li>
+			    <li><span><em>&lt;em&gt;</em></span> → ênfase (lido com destaque em leitores de tela)</li>
+			    <li><span><mark>&lt;mark&gt;</mark></span> → marcação (destaque)</li>
+			    <li><span><small>&lt;small&gt;</small></span> → texto menor</li>
+			    <li><span><del>&lt;del&gt;</del></span> → texto deletado</li>
+			    <li><span><ins>&lt;ins&gt;</ins></span> → texto inserido</li>
+			    <li><span>H<sub>2</sub>O</span> → subscrito com <b>&lt;sub&gt;</b></li>
+			    <li><span>WWW<sup>[1]</sup></span> → sobrescrito com <b>&lt;sup&gt;</b></li>
+		  	</ul>
+		</section>
+
+		<section>
+			<h2>Citações e Referências</h2>
+  				<h3>1. Blockquote</h3>
+  				<p>Citação longa, geralmente indentada:</p>
+				<div class="exemp-area">
+					<blockquote cite="http://www.worldwildlife.org">
+					  Por 60 anos, a WWF tem trabalhado para ajudar pessoas e a natureza a prosperar...
+					</blockquote>
+				</div>
+
+				<h3>2. Q</h3>
+				<p>Citação curta, inline: 
+					<div class="exemp-area"><q>Construir um futuro onde as pessoas vivam em harmonia com a natureza.</q></div>
+				</p>
+
+				<h3>3. Abreviações</h3>
+				<p>
+					<div class="exemp-area"><abbr title="Organização Mundial da Saúde">OMS</abbr> foi fundada em 1948.</div>
+				</p>
+
+				<h3>4. Endereço</h3>
+				<div class="exemp-area">
+					<address>
+						Escrito por Luiza.<br>
+						Me encontre em:<br>
+						github.com/luiza<br>
+						Brasil
+					</address>
+				</div>
+
+				<h3>5. Citação de Obra</h3>
+				<p>
+					<div class="exemp-area"><cite>O Grito</cite>, de Edvard Munch, 1893.</div>
+				</p>
+
+  				<h3>6. Texto invertido</h3>
+  				<div class="exemp-area"><bdo dir="rtl">Este texto será escrito da direita para a esquerda</bdo></div>
+		</section>
+
+		<section>
+			  <h2>Resumo</h2>
+			  <ul>
+			    <li>Use <b>&lt;h1&gt; a &lt;h6&gt;</b> para títulos.</li>
+			    <li><b>&lt;p&gt;</b> cria parágrafos.</li>
+			    <li><b>&lt;br&gt;</b> quebra linha; <b>&lt;hr&gt;</b> insere linha horizontal.</li>
+			    <li><b>&lt;pre&gt;</b> preserva espaços e quebras.</li>
+			    <li>Tags de formatação: <b>b, strong, i, em, mark, small, del, ins, sub, sup</b>.</li>
+			    <li>Citações e extras: <b>blockquote, q, abbr, address, cite, bdo</b>.</li>
+			  </ul>
+		</section>
+	 </main>
+	<footer><span>todos os direitos reservados</span></footer>
+</body>
+</html>

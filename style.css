@@ -55,9 +55,14 @@ section {
 	margin: 10px 0;
 }
 
-.elements-section {
+.elements-section, .exemp-area {
 	border-radius: 20px;
 	background-color: #F1F1F1;
+}
+
+.exemp-area {
+	padding: 30px;
+	display: inline-block;
 }
 
 li > span {
@@ -112,7 +117,7 @@ table {
 }
 
 td, th { 
-	padding: 15px;
+	padding: 15;
 	border: 1px solid black;
 }
 
