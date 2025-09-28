@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas em HTML</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+      width: 100%;
+      margin: 10px 0;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tabelas em HTML</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>O que são tabelas?</h2>
+      <p>
+        Tabelas em HTML servem para organizar dados em <strong>linhas</strong> e <strong>colunas</strong>, tipo uma planilha.  
+        Elas usam linhas (<code>&lt;tr&gt;</code>) e células (<code>&lt;td&gt;</code> ou <code>&lt;th&gt;</code>).
+      </p>
+    </section>
+
+    <section>
+      <h2>Exemplo básico</h2>
+      <div class="exemp-area">
+        <table>
+          <tr>
+            <th>Empresa</th>
+            <th>Contato</th>
+            <th>País</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Alemanha</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>México</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Principais tags de tabela</h2>
+      <ul>
+        <li><code>&lt;table&gt;</code> → cria a tabela</li>
+        <li><code>&lt;tr&gt;</code> → cria uma linha</li>
+        <li><code>&lt;td&gt;</code> → célula de dado</li>
+        <li><code>&lt;th&gt;</code> → célula de cabeçalho</li>
+        <li><code>&lt;caption&gt;</code> → título da tabela</li>
+        <li><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code> → organizam seções</li>
+        <li><code>&lt;colgroup&gt;</code> e <code>&lt;col&gt;</code> → formatam colunas</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Células e linhas</h2>
+      <p>
+        Cada linha começa com <code>&lt;tr&gt;</code> e dentro dela vão as células.  
+        Use <code>&lt;td&gt;</code> para dados e <code>&lt;th&gt;</code> para cabeçalhos.
+      </p>
+      <div class="exemp-area">
+        <table>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+          </tr>
+          <tr>
+            <td>Emil</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>Tobias</td>
+            <td>14</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Estilizando bordas</h2>
+      <p>Você pode deixar a tabela mais bonita usando CSS.</p>
+      <pre><code>table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}</code></pre>
+      <div class="exemp-area">
+        <table>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+          </tr>
+          <tr>
+            <td>Café</td>
+            <td>R$5</td>
+          </tr>
+          <tr>
+            <td>Chá</td>
+            <td>R$3</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Colspan e Rowspan</h2>
+      <p>
+        - <code>colspan</code> → mescla colunas.  
+        - <code>rowspan</code> → mescla linhas.
+      </p>
+      <div class="exemp-area">
+        <table>
+          <tr>
+            <th colspan="2">Nome</th>
+            <th>Idade</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>43</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Zebra stripes</h2>
+      <p>Um efeito comum é pintar linhas alternadas:</p>
+      <pre><code>tr:nth-child(even) {
+  background-color: #D6EEEE;
+}</code></pre>
+      <div class="exemp-area">
+        <table>
+          <tr><th>Item</th><th>Valor</th></tr>
+          <tr><td>1</td><td>10</td></tr>
+          <tr><td>2</td><td>20</td></tr>
+          <tr><td>3</td><td>30</td></tr>
+          <tr><td>4</td><td>40</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Caption</h2>
+      <p>Um título pode ser adicionado com <code>&lt;caption&gt;</code>.</p>
+      <div class="exemp-area">
+        <table>
+          <caption>Economias Mensais</caption>
+          <tr>
+            <th>Mês</th>
+            <th>Valor</th>
+          </tr>
+          <tr>
+            <td>Janeiro</td>
+            <td>R$100</td>
+          </tr>
+          <tr>
+            <td>Fevereiro</td>
+            <td>R$50</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
