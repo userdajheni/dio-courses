@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudo HTML - Imagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>HTML - Imagens</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>O que são imagens em HTML?</h2>
+      <p>As imagens são usadas para deixar uma página mais bonita, informativa e interativa. No HTML, usamos a tag <b>&lt;img&gt;</b> para exibir imagens, mas é importante entender: a imagem não é “colocada” dentro da página, e sim <strong>linkada</strong> por meio do atributo <b>src</b>.</p>
+    </section>
+
+    <section>
+      <h2>Sintaxe básica</h2>
+      <p>A tag <b>&lt;img&gt;</b> é vazia (não tem fechamento) e possui dois atributos obrigatórios:</p>
+      <ul>
+        <li><strong>src</strong>: o caminho da imagem (URL ou pasta local).</li>
+        <li><strong>alt</strong>: texto alternativo (aparece quando a imagem não pode ser carregada e é lido por leitores de tela).</li>
+      </ul>
+      <div class="exemp-area">
+			&lt;img src="img_girl.jpg" alt="Garota de jaqueta"&gt; <br>
+      </div>
+    </section>
+
+    <section>
+      <h2>Largura e altura</h2>
+      <p>Podemos definir o tamanho de uma imagem usando <b>width</b> e <b>height</b> (em pixels) ou via CSS no atributo <b>style</b>.</p>
+      <div class="exemp-area">
+&lt;img src="img_girl.jpg" alt="Garota" width="500" height="600"&gt;
+      </div>
+      <div class="exemp-area">
+&lt;img src="img_girl.jpg" alt="Garota" style="width:500px;height:600px;"&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>Imagens em outras pastas e servidores</h2>
+      <p>Se a imagem estiver em uma pasta diferente, basta indicar o caminho:</p>
+      <div class="exemp-area">
+&lt;img src="/images/html5.gif" alt="HTML5"&gt;
+      </div>
+      <p>Se a imagem for de outro site, usamos a URL completa:</p>
+      <div class="exemp-area">
+&lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Logo W3Schools"&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>Imagem como link</h2>
+      <p>Podemos transformar imagens em links, colocando a tag <b>&lt;img&gt;</b> dentro de um <b>&lt;a&gt;</b>:</p>
+      <div class="exemp-area">
+&lt;a href="default.asp"&gt;
+  &lt;img src="smiley.gif" alt="Tutorial HTML"&gt;
+&lt;/a&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>Imagens flutuantes</h2>
+      <p>Com a propriedade CSS <b>float</b>, podemos alinhar imagens à direita ou à esquerda de um texto:</p>
+      <div class="exemp-area">
+&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley" style="float:right;width:42px;height:42px;"&gt;
+Texto ao lado da imagem.&lt;/p&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>Mapas de imagem</h2>
+      <p>Um <strong>mapa de imagem</strong> permite criar áreas clicáveis dentro de uma imagem, usando <b>&lt;map&gt;</b> e <b>&lt;area&gt;</b>.</p>
+      <div class="exemp-area">
+&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+
+&lt;map name="workmap"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" href="computer.htm" alt="Computador"&gt;
+  &lt;area shape="circle" coords="337,300,44" href="coffee.htm" alt="Café"&gt;
+&lt;/map&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>Imagem de fundo</h2>
+      <p>Também é possível usar imagens como fundo de elementos ou da página inteira com CSS:</p>
+      <div class="exemp-area">
+&lt;style&gt;
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+&lt;/style&gt;
+      </div>
+    </section>
+
+    <section>
+      <h2>O elemento &lt;picture&gt;</h2>
+      <p>Permite mostrar diferentes imagens dependendo do tamanho da tela ou dispositivo.</p>
+      <div class="exemp-area">
+		&lt;picture&gt;
+		  &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt;
+		  &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt;
+		  &lt;img src="img_girl.jpg" alt="Imagem alternativa"&gt;
+		&lt;/picture&gt;
+      </div>
+    </section>
+
+  </main>
+	<footer><span>todos os direitos reservados</span></footer>
+</body>
+</html>
