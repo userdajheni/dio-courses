@@ -32,7 +32,7 @@ Assim consigo revisar conceitos facilmente e compartilhar conhecimento com quem 
 ## 🚀 Como acessar  
 
 Esse repositório também está publicado no **GitHub Pages** 💻  
-👉 Basta acessar: [dio-courses no GitHub Pages](https://SEU-USUARIO.github.io/dio-courses)  
+👉 Basta acessar: [HTML Básico](https://userdajheni.github.io/dio-courses/html-basico/)
 
 ---
 
