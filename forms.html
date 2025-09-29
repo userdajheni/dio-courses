@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulários</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- cabeçalho -->
+	<header>
+		<h1>✨ Formulários -  Guia completo ✨</h1>
+	</header>
+
+	<!-- conteúdo -->
+	 <main>
+		<section>
+			<p>
+				Um formulário HTML é usado para coletar entrada do usuário. A entrada do usuário é Na maioria das vezes enviado para um servidor para processamento. 
+			</p>
+
+			<h2>📌 Tipos de <code>&lt;input&gt;</code></h2>
+      		<p>No HTML, o elemento <code>&lt;input&gt;</code> pode assumir vários <b>tipos</b> que definem o comportamento do campo. Veja a lista:</p>
+		    <ul>
+		        <li><b>text</b> → campo de texto (padrão).</li>
+		        <li><b>password</b> → texto oculto.</li>
+		        <li><b>submit</b> → botão de envio.</li>
+		        <li><b>reset</b> → botão de reset.</li>
+		        <li><b>button</b> → botão genérico.</li>
+		        <li><b>radio</b> → escolha única.</li>
+		        <li><b>checkbox</b> → múltiplas escolhas.</li>
+		        <li><b>color</b> → seletor de cor.</li>
+		        <li><b>date</b> → seletor de data.</li>
+		        <li><b>datetime-local</b> → data + hora.</li>
+		        <li><b>month</b> → seletor de mês.</li>
+		        <li><b>week</b> → seletor de semana.</li>
+		        <li><b>time</b> → seletor de hora.</li>
+		        <li><b>email</b> → valida formato de e-mail.</li>
+		        <li><b>number</b> → números.</li>
+		        <li><b>range</b> → slider numérico.</li>
+		        <li><b>url</b> → valida URL.</li>
+		        <li><b>search</b> → campo de busca.</li>
+		        <li><b>tel</b> → telefone (validação por <code>pattern</code>).</li>
+		        <li><b>file</b> → upload de arquivos.</li>
+		        <li><b>image</b> → imagem como botão de submit.</li>
+		        <li><b>hidden</b> → valor escondido.</li>
+		    </ul>
+
+      		<div class="exemp-area">
+				&lt;form&gt;
+  				&lt;input type="text" placeholder="Digite seu nome"&gt;&lt;br&gt;
+  				&lt;input type="password" placeholder="Digite sua senha"&gt;&lt;br&gt;
+  				&lt;input type="submit" value="Enviar"&gt;
+				&lt;/form&gt;
+
+				<br><br>
+
+				<form>
+					<input type="text" placeholder="Digite seu nome"> <br>
+					<input type="password" placeholder="Digite sua senha"> <br>
+					<input type="submit" value="Enviar">
+				</form>
+      		</div>
+		</section>
+
+		<!-- SECTION: ATRIBUTOS -->
+	    <section>
+	    	<h2>⚙️ Principais atributos</h2>
+	    	<ul>
+		        <li><b>value</b> → valor inicial.</li>
+		        <li><b>readonly</b> → só leitura (envia valor).</li>
+		        <li><b>disabled</b> → desativado (não envia).</li>
+		        <li><b>size</b> → largura em caracteres (padrão = 20).</li>
+		        <li><b>maxlength</b> → máximo de caracteres.</li>
+		        <li><b>min / max</b> → limites (datas, números etc).</li>
+		        <li><b>step</b> → intervalo válido.</li>
+		        <li><b>multiple</b> → permite múltiplos valores.</li>
+		        <li><b>pattern</b> → regex para validar.</li>
+		        <li><b>placeholder</b> → dica dentro do campo.</li>
+		        <li><b>required</b> → obrigatório.</li>
+		        <li><b>autofocus</b> → já vem focado.</li>
+		        <li><b>autocomplete</b> → on/off.</li>
+		        <li><b>list</b> → conecta com <code>&lt;datalist&gt;</code>.</li>
+		        <li><b>height / width</b> → só para <code>type="image"</code>.</li>
+	      	</ul>
+
+	    	<div class="exemp-area">
+				&lt;input type="text" value="Luiza" readonly&gt;
+				&lt;input type="text" placeholder="Digite algo" required&gt;
+				&lt;input type="number" min="1" max="10" step="2"&gt;
+
+				<br><br>
+
+				<input type="text" value="Luiza" readonly>
+				<input type="text" placeholder="Digite algo" required>
+				<input type="number" min="1" max="10" step="2">
+	      	</div>
+	    </section>
+
+		<section>
+	    	<h2>📂 Atributos relacionados ao formulário</h2>
+	    	<p>Alguns atributos funcionam em conjunto com o elemento <code>&lt;form&gt;</code>:</p>
+		    <ul>
+		    	<li><b>form</b> → associa um input a um form.</li>
+		        <li><b>formaction</b> → altera a URL de envio.</li>
+		        <li><b>formenctype</b> → define codificação (ex: multipart).</li>
+		        <li><b>formmethod</b> → GET ou POST.</li>
+		    </ul>
+
+	    	<div class="exemp-area">
+				&lt;form action="processa.php" method="post"&gt;
+	  			&lt;input type="text" name="usuario" required&gt;
+	  			&lt;input type="submit" value="Enviar"&gt;
+				&lt;/form&gt;
+
+				<br><br>
+
+				<form action="processa.php" method="post">
+					<input type="text" name="usuario" required>
+					<input type="submit" value="Enviar">
+				</form>
+	      	</div>
+	    </section>
+
+		<section>
+      		<h2>💡 Dicas e curiosidades</h2>
+      		<ul>
+		        <li>Se não definir <code>type</code>, o padrão será <b>text</b>.</li>
+		        <li><code>readonly</code> envia valor, <code>disabled</code> não.</li>
+		        <li><code>required</code> impede envio sem preenchimento.</li>
+		        <li><code>get</code> mostra dados na URL, <code>post</code> não.</li>
+      		</ul>
+    	</section>
+	</main>
+
+	<footer><span>todos os direitos reservados</span></footer>
+</body>
+</html>
