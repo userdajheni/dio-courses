@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estudando CSS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- cabeçalho -->
+	<header>
+		<h1>CSS - Guia prático!</h1>
+	</header>
+
+	<!-- conteúdo -->
+	<main>
+		<!-- introdução -->
+		<section>
+			<h2>🌐📘 O que é CSS</h2>
+			<p>
+				<b>CSS (Cascading Style Sheets)</b> é a linguagem usada para estilizar documentos HTML. <br>
+				Ela define como os elementos HTML devem ser exibidos em uma página da web.
+			</p>
+
+			<ul>
+				<li><b>CSS</b> significa Cascading Style Sheets (Folhas de Estilo em Cascata).</li>
+				<li>Descreve como os elementos HTML devem ser apresentados na tela, no papel ou em outros tipos de mídia.</li>
+				<li>Economiza muito trabalho, pois pode controlar o layout de várias páginas da web ao mesmo tempo.</li>
+				<li>As folhas de estilo externas são armazenadas em arquivos com a extensão .css.</li>
+			</ul>
+
+			<div class="exemp-area">
+				<h3>💡 Exemplo de CSS</h3>
+				<code>
+					body { <br>
+					  background-color: lightblue; <br>
+					} <br> <br>
+
+					h1 { <br>
+					  color: white; <br>
+					  text-align: center; <br>
+					} <br><br>
+
+					p { <br>
+					  font-family: verdana; <br>
+					  font-size: 20px; <br>
+					}
+				</code>
+			</div>
+		</section>
+
+		<section>
+			<h2>🎯 Por que usar CSS</h2>
+			<p>O CSS é usado para definir estilos em páginas da web, incluindo design, layout e diferentes formas de exibição em diversos dispositivos e tamanhos de tela.</p>
+
+			<h2>⚡ CSS economiza tempo</h2>
+			<p>
+				As definições de estilo geralmente são salvas em um arquivo externo <b>.css</b>. <br>
+				Com isso, é possível alterar o visual de um site inteiro modificando apenas um único arquivo.
+			</p>
+		</section>
+
+		<section>
+			<h2>🔠 Sintaxe do CSS</h2>
+			<p>Uma regra CSS é composta por um <b>seletor</b> e um <b>bloco de declarações</b>.</p>
+
+			<div class="exemp-area">
+				<code>
+					h1 { <br>
+					  color: blue; <br>
+					  font-size: 12px; <br>
+					}
+				</code>
+
+				<h3>🧩 Explicando o exemplo</h3>
+				<ul>
+					<li><span>p</span> é o seletor (aponta para o elemento <span>&lt;p&gt;</span> no HTML).</li>
+					<li><span>color</span> é uma propriedade, e <span>red</span> é o valor dessa propriedade.</li>
+					<li>text-align é outra propriedade, e <span>center</span> é o seu valor.</li>
+				</ul>
+			</div>
+
+			<ul>
+				<li>O <b>seletor</b> aponta para o elemento HTML que você deseja estilizar (neste caso, <span>&lt;h1&gt;</span>).</li>
+				<li>O <b>bloco de declarações</b> contém uma ou mais declarações separadas por ponto e vírgula.q</li>
+				<li>Cada declaração inclui uma <b>propriedade CSS</b> e um <b>valor</b>, separados por dois pontos.</li>
+				<li>O bloco é delimitado por <b>chaves <span>{}</span></b>.</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>
