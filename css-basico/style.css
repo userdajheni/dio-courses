@@ -66,3 +66,22 @@ code {
 	display: inline-block;
 	background-color: #FEF9EF;
 }
+
+/* links */
+.links-area {
+	color: #FEF9EF;
+	border-radius: 20px;
+	background-color: #17C3B2;
+}
+
+.links-area a {
+	color: #FEF9EF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.links-area a:hover {
+	padding: 10px;
+	border-radius: 10px;
+	background: #FFCB77;
+}
