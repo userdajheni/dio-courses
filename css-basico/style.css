@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap');
+
+/*
+	Font destaque h1: Oswald,
+	Font destaque h2: Poppins,
+	Font destaque h3: Roboto,
+	Font corpo texto: Funnel Display.
+*/
+
+h1 {
+	font-family: "Oswald", sans-serif;
+}
+
+h2 {
+	font-family: "Poppins", sans-serif;
+}
+
+h3 {
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+	font-size: 1.4rem;
+	text-align: justify;
+	font-family: "Funnel Display", sans-serif;
+}
+
+li { font-size: 1.5rem;}
+
+/* header */
+header {
+	padding: 50px;
+	color: #FEF9EF;
+	text-align: center;
+	background-color: #227C9D;
+}
+
+/* conteúdo */
+main {
+	margin: 20px;
+	padding: 50px;
+}
+
+section {
+	margin: 30px 0;
+	padding: 15px;
+}
+
+b { color: #FE6D73;}
+
+li {
+	line-height: 2;
+}
+
+span {
+	padding: 10px;
+	font-weight: bold;
+	background-color: #F1F1F1;
+}
+
+/* area de exemplo */
+code {
+	font-size: 15px;
+	padding: 15px 30px;
+	border-radius: 20px;
+	display: inline-block;
+	background-color: #FEF9EF;
+}
+
+/* links */
+.links-area {
+	color: #FEF9EF;
+	border-radius: 20px;
+	background-color: #17C3B2;
+}
+
+.links-area a {
+	color: #FEF9EF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.links-area a:hover {
+	padding: 10px;
+	border-radius: 10px;
+	background: #FFCB77;
+}
